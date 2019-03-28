@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>近现代史</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<title>近现代史</title><link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
@@ -149,6 +149,107 @@ iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 
 
+:root { --active-file-bg-color: rgba(32, 43, 51, 0.63); --active-file-text-color: white; --bg-color: #f3f2ee; --text-color: #1f0909; --control-text-color: #444; --rawblock-edit-panel-bd: #e5e5e5; --select-text-bg-color: rgba(32, 43, 51, 0.63); --select-text-font-color: white; }
+pre { --select-text-bg-color: #36284e; --select-text-font-color: #fff; }
+html { font-size: 16px; }
+html, body { background-color: rgb(243, 242, 238); font-family: "PT Serif", "Times New Roman", Times, serif; color: rgb(31, 9, 9); line-height: 1.5em; }
+#write { max-width: 40em; }
+ol li { list-style-type: decimal; list-style-position: outside; }
+ul li { list-style-type: disc; list-style-position: outside; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after, q::before, q::after { content: none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-size: 1.875em; line-height: 1.6em; margin-top: 2em; }
+h2, h3 { font-size: 1.3125em; line-height: 1.15; margin-top: 2.28571em; margin-bottom: 1.15em; }
+h3 { font-weight: normal; }
+h4 { font-size: 1.125em; margin-top: 2.67em; }
+h5, h6 { font-size: 1em; }
+h1 { border-bottom: 1px solid; margin-bottom: 1.875em; padding-bottom: 0.8125em; }
+a { text-decoration: none; color: rgb(6, 85, 136); }
+a:hover, a:active { text-decoration: underline; }
+p, blockquote, .md-fences { margin-bottom: 1.5em; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 1.5em; }
+blockquote { font-style: italic; border-left: 5px solid; margin-left: 2em; padding-left: 1em; }
+ul, ol { margin: 0px 0px 1.5em 1.5em; }
+.md-meta, .md-before, .md-after { color: rgb(153, 153, 153); }
+table { margin-bottom: 1.5em; font-size: 1em; }
+thead th, tfoot th { padding: 0.25em 0.25em 0.25em 0.4em; text-transform: uppercase; }
+th { text-align: left; }
+td { vertical-align: top; padding: 0.25em 0.25em 0.25em 0.4em; }
+code, .md-fences { background-color: rgb(218, 218, 218); }
+code { padding-left: 2px; padding-right: 2px; }
+.md-fences { margin-left: 2em; margin-bottom: 3em; padding-left: 1ch; padding-right: 1ch; }
+pre, code, tt { font-size: 0.875em; line-height: 1.71429em; }
+h1 { line-height: 1.3em; font-weight: normal; margin-bottom: 0.5em; }
+p + ul, p + ol { margin-top: 0.5em; }
+h3 + ul, h4 + ul, h5 + ul, h6 + ul, h3 + ol, h4 + ol, h5 + ol, h6 + ol { margin-top: 0.5em; }
+li > ul, li > ol { margin-top: inherit; margin-bottom: 0px; }
+li ol > li { list-style-type: lower-alpha; }
+li li ol > li { list-style-type: lower-roman; }
+h2, h3 { margin-bottom: 0.75em; }
+hr { border-top: none; border-right: none; border-bottom: 1px solid; border-left: none; }
+h1 { border-color: rgb(197, 197, 197); }
+blockquote { border-color: rgb(186, 186, 186); color: rgb(101, 101, 101); }
+blockquote ul, blockquote ol { margin-left: 0px; }
+.ty-table-edit { background-color: transparent; }
+thead { background-color: rgb(218, 218, 218); }
+tr:nth-child(2n) { background: rgb(232, 231, 231); }
+hr { border-color: rgb(197, 197, 197); }
+.task-list { padding-left: 1rem; }
+.md-task-list-item { padding-left: 1.5rem; list-style-type: none; }
+.md-task-list-item > input::before { content: "√"; display: inline-block; width: 1.25rem; height: 1.6rem; vertical-align: middle; text-align: center; color: rgb(221, 221, 221); background-color: rgb(243, 242, 238); }
+.md-task-list-item > input:checked::before, .md-task-list-item > input[checked]::before { color: inherit; }
+#write pre.md-meta-block { min-height: 1.875rem; color: rgb(85, 85, 85); border: 0px; background: transparent; margin-left: 1em; margin-top: 1em; }
+.md-image > .md-meta { color: rgb(155, 81, 70); }
+.md-image > .md-meta { font-family: Menlo, "Ubuntu Mono", Consolas, "Courier New", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", serif; }
+#write > h3.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h4.md-focus::before { left: -1.5rem; top: 0.25rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h5.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h6.md-focus::before { left: -1.5rem; top: 0.3125rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+.md-toc:focus .md-toc-content { margin-top: 19px; }
+.md-toc-content:empty::before { color: rgb(6, 85, 136); }
+.md-toc-item { color: rgb(6, 85, 136); }
+#write div.md-toc-tooltip { background-color: rgb(243, 242, 238); }
+#typora-sidebar { background-color: rgb(243, 242, 238); box-shadow: rgba(0, 0, 0, 0.376) 0px 6px 12px; }
+.pin-outline #typora-sidebar { background: inherit; box-shadow: none; border-right: 1px dashed; }
+.pin-outline #typora-sidebar:hover .outline-title-wrapper { border-left: 1px dashed; }
+.outline-item:hover { background-color: rgb(218, 218, 218); border-left: 28px solid rgb(218, 218, 218); border-right: 18px solid rgb(218, 218, 218); }
+.typora-node .outline-item:hover { border-right: 28px solid rgb(218, 218, 218); }
+.outline-expander::before { content: ""; font-family: FontAwesome; font-size: 14px; top: 1px; }
+.outline-expander:hover::before, .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.modal-content { background-color: rgb(243, 242, 238); }
+.auto-suggest-container ul li { list-style-type: none; }
+.megamenu-menu, #top-titlebar, #top-titlebar *, .megamenu-content { background: rgb(243, 242, 238); color: rgb(31, 9, 9); }
+.megamenu-menu-header { border-bottom: 1px dashed rgb(32, 43, 51); }
+.megamenu-menu { box-shadow: none; border-right: 1px dashed; }
+header, .context-menu, .megamenu-content, footer { font-family: "PT Serif", "Times New Roman", Times, serif; color: rgb(31, 9, 9); }
+#megamenu-back-btn { color: rgb(31, 9, 9); border-color: rgb(31, 9, 9); }
+.megamenu-menu-header #megamenu-menu-header-title::before { color: rgb(31, 9, 9); }
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active { color: inherit; background-color: rgb(232, 231, 223); }
+.long-btn:hover { background-color: rgb(232, 231, 223); }
+#recent-file-panel tbody tr:nth-child(2n-1) { background-color: transparent !important; }
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) { color: inherit; }
+.megamenu-menu-panel .btn { background-color: rgb(210, 209, 209); }
+.btn-default { background-color: transparent; }
+.typora-sourceview-on #toggle-sourceview-btn, .ty-show-word-count #footer-word-count { background: rgb(199, 197, 197); }
+#typora-quick-open { background-color: inherit; }
+.md-diagram-panel { margin-top: 8px; }
+.file-list-item-file-name { font-weight: initial; }
+.file-list-item-summary { opacity: 1; }
+.file-list-item { color: rgb(119, 119, 119); }
+.file-list-item.active { background-color: inherit; color: black; }
+.ty-side-sort-btn.active { background-color: inherit; }
+.file-list-item.active .file-list-item-file-name { font-weight: bold; }
+.file-list-item { opacity: 1 !important; }
+.file-library-node.active > .file-node-background { background-color: var(--active-file-bg-color); }
+.file-tree-node.active > .file-node-content { color: var(--active-file-text-color); }
+.md-task-list-item > input { margin-left: -1.6em; margin-top: calc(1rem - 12px); }
+input { border: 1px solid rgb(170, 170, 170); }
+.megamenu-menu-header #megamenu-menu-header-title, .megamenu-menu-header:hover, .megamenu-menu-header:focus { color: inherit; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+.os-windows-7 strong, .os-windows-7 strong { font-weight: 760; }
 
 
 
@@ -158,6 +259,10 @@ iframe { max-width: 100%; width: 100%; border: none; }
 </style>
 </head>
 <body class='typora-export os-windows' >
-<div  id='write'  class = 'is-node'><h6><a name='header-n0' class='md-header-anchor '></a>1．近代以来中华民族面临的两大历史任务及其联系</h6><p>（1）两大历史任务：<strong>一是求得民族独立和人民解放； 二是实现国家繁荣富强和人民共同富裕</strong>。</p><p>（2）联系：只有完成第一大任务，才能为第二大任务的完成创造条件。一方面，争取民族独立和人民解放是实现国家繁荣富强和人民共同富裕的前提条件， 只有实现民族独立和人民解放，才能废除列强同中国签订的一切不平等条约， 才能推翻封建专制制度， 改变买办的和封建的生产关系，解放生产力，开辟走向现代化的道路。另一方面，争取民族独立和人民解放的最终目的是使中国走向现代化， 实现国家繁荣富强和人民的共同富裕， 使中华民族自立于世界民族之林。</p><h6><a name='header-n3' class='md-header-anchor '></a>2．旧民主主义革命时期中国人民反侵略斗争失败的主要原因是什么？</h6><p>自 1840 年至 1919 年， 中国人民为反对外来侵略进行了英勇斗争， 但都失败了， 究其原因：<strong>一是社会制度的腐败，二是经济技术的落后，而前者是最根本的原因。</strong></p><p>社会制度的腐败。清中期以后，封建统治日趋衰落，进入近代以后，社会制度没有根本改变，相反却更加腐败。腐朽的清王朝统治者为了自身的私利，不惜出卖国家和民族的利益，总是把防止人民的反抗放在首位， 担心人民群众动员起来以后危及自身的统治， 宣扬 “防民甚于防寇” ，常常压制、破坏人民群众和爱国官兵的反侵略斗争，导致反侵略失败。甚至在反侵略斗争。取得一定胜利的时候， 腐败的清政府为了维护自己的统治， 力主避战求和， 为此不惜割地、 赔款。正是腐败的中国半殖民地半封建的社会制度， 阻碍了中国人民的广泛动员和组织。 这是近代中国人民反侵略战争屡遭失败的最根本原因。</p><p>经济技术的落后是近代中国人民反侵略战争失败的另一个重要原因。 进入近代以后， 西方资本主义强国经过工业革命，经济和技术飞速发展，而中国经济技术落后的局面没有改变，经济总量较小，工业技术落后，洋务运动和民族资本主义经济的发展没有改变这种局面，必然导致被动挨打。经济技术的落后，又使中国在武器装备、军队素质、综合实力等方面远远落后于帝国主义列强。</p></div>
+<div  id='write'  class = 'is-node'><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h4" data-ref="n33"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n33">1．近代以来中华民族面临的两大历史任务及其联系</a></span><span class="md-toc-item md-toc-h4" data-ref="n3"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n3">2．旧民主主义革命时期中国人民反侵略斗争失败的主要原因是什么？</a></span><span class="md-toc-item md-toc-h4" data-ref="n72"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n72">3．十九世纪末，帝国主义列强灭亡和瓜分中国的图谋破产的主要原因。</a></span><span class="md-toc-item md-toc-h4" data-ref="n75"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n75">4．近代中国工人阶级的特点是什么?</a></span><span class="md-toc-item md-toc-h4" data-ref="n80"><a class="md-toc-inner" style="cursor: pointer;" href="#header-n80">5．近代中国社会的主要矛盾及其相互联系是是什么。</a></span></p></div><h4><a name='header-n33' class='md-header-anchor '></a>1．近代以来中华民族面临的两大历史任务及其联系</h4><p>（1）两大历史任务：<strong>一是求得民族独立和人民解放； 二是实现国家繁荣富强和人民共同富裕</strong>。<br>（2）联系：只有完成第一大任务，才能为第二大任务的完成创造条件。一方面，争取民族独立和人民解放是实现国家繁荣富强和人民共同富裕的前提条件， 只有实现民族独立和人民解放，才能废除列强同中国签订的一切不平等条约， 才能推翻封建专制制度， 改变买办的和封建的生产关系，解放生产力，开辟走向现代化的道路。另一方面，争取民族独立和人民解放的最终目的是使中国走向现代化， 实现国家繁荣富强和人民的共同富裕， 使中华民族自立于世界民族之林。</p><h4><a name='header-n3' class='md-header-anchor '></a>2．旧民主主义革命时期中国人民反侵略斗争失败的主要原因是什么？</h4><p>自 1840 年至 1919 年， 中国人民为反对外来侵略进行了英勇斗争， 但都失败了， 究其原因：<strong>一是社会制度的腐败，二是经济技术的落后，而前者是最根本的原因。</strong></p><p>社会制度的腐败。清中期以后，封建统治日趋衰落，进入近代以后，社会制度没有根本改变，相反却更加腐败。腐朽的清王朝统治者为了自身的私利，不惜出卖国家和民族的利益，总是把防止人民的反抗放在首位， 担心人民群众动员起来以后危及自身的统治， 宣扬 “防民甚于防寇” ，常常压制、破坏人民群众和爱国官兵的反侵略斗争，导致反侵略失败。甚至在反侵略斗争。取得一定胜利的时候， 腐败的清政府为了维护自己的统治， 力主避战求和， 为此不惜割地、 赔款。正是腐败的中国半殖民地半封建的社会制度， 阻碍了中国人民的广泛动员和组织。 这是近代中国人民反侵略战争屡遭失败的最根本原因。</p><p>经济技术的落后是近代中国人民反侵略战争失败的另一个重要原因。 进入近代以后， 西方资本主义强国经过工业革命，经济和技术飞速发展，而中国经济技术落后的局面没有改变，经济总量较小，工业技术落后，洋务运动和民族资本主义经济的发展没有改变这种局面，必然导致被动挨打。经济技术的落后，又使中国在武器装备、军队素质、综合实力等方面远远落后于帝国主义列强。</p><h4><a name='header-n72' class='md-header-anchor '></a>3．十九世纪末，帝国主义列强灭亡和瓜分中国的图谋破产的主要原因。</h4><p><strong>帝国主义列强之间的矛盾和相互制约，是一个重要原因</strong>。瓜分中国，变中国为自己的殖民地是外国列强的共同图谋，但是彼此之间又有许多纠葛矛盾，甚至可能爆发战争。因此，列强各国经过协商，暂缓瓜分中国，保全清政府，以使其成为统治中国的工具，实行“以华制华” 。列强不能灭亡和瓜分中国的<strong>最根本原因是中国人民进行了不屈不挠的反侵略斗争</strong>。 <br>在义和团反帝爱国运动期间，中国人民以其不畏强暴，敢与敌人血战到底的气概，打击了侵略者，使他们不敢为所欲为地瓜分中国。 这一点连侵略者也承认。 八国联军统帅瓦德西在给德皇威廉二世的报告中称， 中国人有四万万之众， 且 “彼等在实际上， 尚含有无限蓬勃生气。 ” “无论欧、美、日本各国，皆无此脑力与兵力，可以统治此天下生灵四分之一也。 ” “故瓜分一事，实为下策。<br> ”可见，粉碎外国列强瓜分中国和灭亡中国韵图谋的真正原因在于，中华民族为反抗侵略进行的前仆后继、视死如归的战斗。</p><h4><a name='header-n75' class='md-header-anchor '></a>4．近代中国工人阶级的特点是什么?</h4><p>（1）它深受帝国主义、封建势力和资产阶级三重压迫和剥削，劳动条件差，劳动时间长，工资待遇低，又毫无政治权利，其革命性最强。  <br>
+（2）它人数虽少，但相对集中，从地区上讲主要集中于上海、广州、武汉、天津等大城市，从行业上讲主要集中于纺织、面粉、采矿、铁路等行业，便于形成革命的力量和传播先进的思想。  <br>
+（3）它主要是由破产农民和家庭手工业者转化而来的，同农民有着天然的联系，便于结成工农联盟。</p><h4><a name='header-n80' class='md-header-anchor '></a>5．近代中国社会的主要矛盾及其相互联系是是什么。</h4><p>（1）在半殖民地半封建的中国，帝国主义与中华民族的矛盾、封建主义与人民大众的矛盾是两对主要矛盾，而帝国主义与中华民族的矛盾，乃是各种矛盾中最主要的矛盾。 <br>
+（2）两对主要矛盾之间的关系，一是当外国列强向中国发动侵略战争时，为避免亡国灭种的危险名中国内部各阶级，除了汉奸、卖国贼外，能够暂时团结起来共同对敌，阶级矛盾降到次要地位，而民族矛盾上升到主要地位。 <br>
+二是当外国侵略者同中国封建政权相勾结， 共同镇压中国革命， 尤其是封建地主阶级对人民的压迫特别残酷时， 中国人民往往用战争的形式反对封建政权， 这时阶级矛盾就上升为主要矛盾。  <br>三是国内战争发展到直接威胁帝国主义在华利益以及中国封建地主阶级统治时， 外国列强甚至直接出兵，镇压中国人民，援助中国反动派，这时，帝国主义和国内封建主义完全公开站在一条战线上。 </p></div>
 </body>
 </html>
